@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+.giris{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+img {
+    
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Kareli bir karanlık arka plan ekleyin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Yazı rengi */
+}
+.containerB{
+    width: 100%;
+    height: 100vh;
+    
+}
