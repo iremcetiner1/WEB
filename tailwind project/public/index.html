@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +16,7 @@
     <!--HEADER Container-->
     <div class="container flex item-center justify-between space-x-16">
       <!--LOGO-->
-      <a href="#" class ="text-6xl font-bold text-gega-grey ">ZiPOTFY</a>
+      <a href="#" class ="text-6xl font-bold text-gega-grey text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-white">ZiPOTFY</a>
       <!--NAVIGATION-->
       <nav class="flex justify between flex-1">
         <!--MENU-->
@@ -26,8 +27,22 @@
           <a href="#" class="hover:text-gega-red text-white transition duration-500">NEWS</a>
           <a href="#" class="hover:text-gega-red text-white transition duration-500">ABOUT</a>
         </div><!--navigation barın içindekiler birbirlerine göre ortalanması için items-center -->
+        <!--LOGIN  AREA -->
+        <div class="flex items-center space-x-8">
+          <!--Search area-->
+          <form>
+            <div class="group border-r px-4 mx-4 py-1 border-gega-red">
+              <input type ="text" class=" opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-44 transition duration-500">
+              <button class="-ml-4 group-hover:ml-0 transition duration-500"></button><i class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
+            </div>
+          </form>
+          <!--Sıgn Up-->
+          <div class="flex items-center space-x-8 text-lg">
+            <a href="#">LogIn</a>
+            <a href="#" class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-500">Sign Up</a>
 
-
+          </div>
+        </div>
       </nav> <!--flex-1 mümkün olduğu kadar çok yer kaplıyor -->
 
     </div>
