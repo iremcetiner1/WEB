@@ -34,10 +34,46 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white; /* Yazı rengi */
+    color: rgb(45, 13, 13); /* Yazı rengi */
+    font-size: 25px;
 }
+.overlay form{
+    position: absolute; /* Metnin pozisyonunu belirlemek için */
+    top: 0; /* Üst kenara yasla */
+    right: 10px; /* Sağ kenara yasla */
+  
+    /* Diğer stillendirme özellikleri */
+}
+.search-box {
+    overflow: hidden; /* İçeriği sığdırmak için */
+
+}
+
+.search-button {
+    border: none;
+    background: none;
+}
+
 .containerB{
     width: 100%;
     height: 100vh;
-    
+    background-color: rgb(10, 5, 5);
+    display: flex;
+    flex-wrap: wrap; /* Paneller sığmazsa alt satıra geçmesini sağlar */
+}
+.block{
+    width: calc(33.33% - 20px); /* Panellerin genişliği, kenar boşluklarını da hesaba katarak eşit olacak şekilde ayarlanır */
+    background-color:rgb(139, 139, 139);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px; /* Panel etrafında bir boşluk bırakır */
+    flex-grow: 1; /* Panellerin eşit genişlikte olmasını sağlar */
+    max-width: calc(33.33% - 20px);
+    border-radius: 20px;
+    max-height: 500px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.block:hover{
+    transform: translateY(-5px);
 }

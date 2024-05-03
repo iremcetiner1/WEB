@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Resim Üzerine Öğe Ekleme</title>
     <style>
 </style>
@@ -11,14 +12,24 @@
 <body>
     <div class="container">
         <div class ="giris">
-        <img src="image/coffee.jpg" alt="Resim Açıklaması">
+        <img src="image/coffee2.jpg" alt="Image explanation" >
         <div class="overlay">
-            <p>COFFEE</p>
+            <form action="/search" method="GET" class="search-box">
+                <input type="text" name="q" placeholder="Search..." style="background-color: black; border: none; outline: none; padding: 5px;">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search" style="font-size: 20px; color:bisque"></i>
+                </button>
+            </form>
+        
         </div>
         </div>
         <div class="containerB">
+            <div class="block" style="background: url('image/coffeetypes.jpg') ; background-size:cover ; overflow: hidden; /* Resmin panelin içinde tam olarak görünmesini sağla */"></div>
+            <div class="block"  style="background: url('image/coffeety.png') center center/103% 103% no-repeat;" ></div>
+            <div class="block" style="background: url('image/coffeeq.jpg') center center/cover no-repeat;"></div>
 
         </div>
+        <div class="containerC"></div>
     </div>
 </body>
 </html>
