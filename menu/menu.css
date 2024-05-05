@@ -34,8 +34,8 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgb(45, 13, 13); /* Yazı rengi */
-    font-size: 25px;
+    color:white; /* Yazı rengi */
+    font-size: 45px;
 }
 .overlay form{
     position: absolute; /* Metnin pozisyonunu belirlemek için */
