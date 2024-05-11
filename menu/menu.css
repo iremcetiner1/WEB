@@ -15,6 +15,9 @@ body {
     justify-content: center;
     flex-wrap: wrap; 
     margin-bottom: 50px;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .giris{
     position: relative;
@@ -67,6 +70,9 @@ img {
     background-color: rgb(10, 5, 5);
     display: flex;
     flex-wrap: wrap; /* Paneller sığmazsa alt satıra geçmesini sağlar */
+    text-align: center;
+    margin-bottom: 0px;
+    color:#fff;
 }
 .block{
     width: calc(33.33% - 20px); /* Panellerin genişliği, kenar boşluklarını da hesaba katarak eşit olacak şekilde ayarlanır */
@@ -76,8 +82,8 @@ img {
     margin: 10px; /* Panel etrafında bir boşluk bırakır */
     flex-grow: 1; /* Panellerin eşit genişlikte olmasını sağlar */
     max-width: calc(33.33% - 20px);
-    border-radius: 20px;
-    max-height: 500px;
+    
+    max-height: 400px;
     margin-top: 20px;
     transition: transform 0.5s ease;
 }
@@ -141,6 +147,7 @@ header {
     background-color: rgb(10, 5, 5);
     color: #fff;
     padding: 10px 0;
+    font-size: 20;
 }
 
 nav ul {
