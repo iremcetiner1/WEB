@@ -88,3 +88,10 @@ var hoursContainer = document.querySelector('.hours')
             panel1.style.display = 'none';
           }
         });
+        function goToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth' // Animasyonlu kaydırma için
+          });
+      }
+      
