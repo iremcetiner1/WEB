@@ -57,17 +57,40 @@
 
   </header>
   <!--Main Section-->
-  <section class="h-128 w-full bg-black group relative "> 
+  <section class="h-64 md:h-96 lg:h-128 w-full bg-black group relative "> 
     <!---->
-   <img src="./images/batman.jpg" alt="" class="h-full w-full object-fill">
+   <img src="./images/concert.jpg" alt="" class="h-full w-full object-fill">
    <!--Hero content-->
    <div class="absolute bottom-0 w-full bg-gradiant-to-b from-transparent to-black">
     <!--Hero content container-->
     <div class="container">
-      <h3 class="text-gega-red tracking-wider group-hover:mb-1 duration-500">Rock,  Indie, Alternative</h3>  
-      <h1 class="text-6xl text-gega-red group-hover:mb-1 duration-500">Mükemmel Boşluk</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam adipisci dolores voluptate vero, ipsa in aut harum assumenda mollitia obcaecati eum alias ut? Aut nesciunt facilis accusantium cum officiis consequatur.</p>
+      <h3 class="text-gega-melon tracking-wider group-hover:mb-1 duration-500">Rock,  Indie, Alternative</h3>  
+      <h1 class="text-4xl lg:text-6xl text-gega-white group-hover:mb-1 duration-500">Mükemmel Boşluk</h1>
+      <p class="text-gega-white group-hover:mb-2 duration-500 text-sm lg:text-base w-3/4 lg:w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam adipisci dolores voluptate vero, ipsa in aut harum assumenda mollitia obcaecati eum alias ut? Aut nesciunt facilis accusantium cum officiis consequatur.</p>
+      <!--Detail container-->
+      <div class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-1000">
+        <!-- Watch -->
+        <div class="flex space-x-2 items-center cursor-pointer">
+          <a href="#" class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500">Watch Intro </a>
+          <div class="flex h-8 w-8 items-center text-center justify-center bg-gega-red text-gega-grey rounded-full">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="flex space-x-2 items-center cursor-pointer">
+          <a href="#" class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500">Listen </a>
+          <div class="flex h-8 w-8 items-center text-center justify-center bg-gega-red text-gega-grey rounded-full">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
     </div>
+   </div>
+   <!--Points-->
+   <div class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000">
+    <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-red"></div>
+    <div class="w-3 h-3 lg:w-4 lg:h-4  rounded-full bg-gega-grey"></div>
+    <div class="w-3 h-3 lg:w-4 lg:h-4  rounded-full bg-gega-grey"></div>
+    <div class="w-3 h-3 lg:w-4 lg:h-4  rounded-full bg-gega-grey"></div>
    </div>
   </section>
 </body>
