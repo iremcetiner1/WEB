@@ -94,4 +94,25 @@ var hoursContainer = document.querySelector('.hours')
               behavior: 'smooth' // Animasyonlu kaydırma için
           });
       }
+function setLanguage(lang) {
+        localStorage.setItem('language', lang);
+        location.reload();
+}
+      
+function getLanguage() {
+        return localStorage.getItem('language') || 'en'; // Varsayılan dil 'en' (İngilizce)
+}
+      
+document.addEventListener("DOMContentLoaded", function() {
+    const lang = getLanguage();
+        document.querySelector("#language-selector select").value = lang;
+        fetch(`/languages/${lang}.json`)
+          .then(response => response.json())
+          .then(translations => {
+            document.querySelectorAll("[data-translate]").forEach(element => {
+              const key = element.getAttribute("data-translate");
+              element.textContent = translations[key];
+            });
+          });
+});
       

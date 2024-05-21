@@ -99,8 +99,21 @@ img {
 }
 
 .search-button {
-    border: none;
-    background: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#language-selector {
+  margin-left: 10px;
+}
+
+#language-selector select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
 }
 #goTopButton {
   display:block; /* Başlangıçta butonu gizleyin */
@@ -116,6 +129,11 @@ img {
   cursor: pointer;
   padding: 10px;
   border-radius: 50%;
+}
+#language-selector select {
+  padding: 5px;
+  font-size: 16px;
+  margin: 10px;
 }
 
 #goTopButton:hover {

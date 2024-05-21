@@ -17,7 +17,7 @@
     <div class="container">
 
         <div class ="giris">
-            <header>
+            <header> 
                 <nav>
                     <ul>
                         <li><a href="#">Main</a></li>
@@ -30,7 +30,7 @@
             <button onclick="goToTop()" id="goTopButton" title="Sayfanın Başına Git">&#8593;</button>
         <img src="image/coffee2.jpg" alt="Image explanation" >
         <div class="overlay">
-            
+
             <span>- COFFEE -</span>
             <div class="clock">
                 <div class="hours">
@@ -73,7 +73,14 @@
                 <button type="submit" class="search-button">
                     <i class="fas fa-search" style="font-size: 20px; color:bisque"></i>
                 </button>
+                
             </form>
+            <div id="language-selector">
+              <select onchange="setLanguage(this.value)">
+                  <option value="en">English</option>
+                  <option value="tr">Türkçe</option>
+              </select>
+            </div>
         </div>
         
         </div>
