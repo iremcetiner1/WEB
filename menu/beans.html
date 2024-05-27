@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color:white;
+            font-size: 50px;
+            display: flex;
+        }
+        .box-container {
+            display: flex;
+            margin-top: 10px;
+        }
+        .box{
+            flex-grow: 1; /* Tüm kutuların eşit genişlikte olması için */
+            max-width: 500px;
+            max-height:510px;
+            background-color: brown;
+            width: 100%;
+            height: 100%;
+            margin-right: 5px;
+            overflow: hidden; /* Resimlerin kutu sınırlarını aşmaması için */
+            border-radius: 20px; /* Tüm kutuların kenar yarıçapı */
+        }
+        .box img {
+            width: 100%; /* Resmin kutu içinde tamamen görünmesi için */
+            height: 100%; /* Resmin kutu içinde tamamen görünmesi için */
+            object-fit: cover; /* Resmi kutu içinde sığdırmak için */
+        }
+        header {
+            background-color: rgb(10, 5, 5);
+            color: #fff;
+            padding: 10px 0;
+            font-size: 20;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .footer{
+            background:#000;
+            padding:30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align:center;
+            }
+            
+            .footer .row{
+            width:100%;
+            margin:1% 0%;
+            padding:0.6% 0%;
+            color:gray;
+            font-size:0.8em;
+            }
+            
+            .footer .row a{
+            text-decoration:none;
+            color:gray;
+            transition:0.5s;
+            }
+            
+            .footer .row a:hover{
+            color:#fff;
+            }
+            
+            .footer .row ul{
+            width:100%;
+            }
+            
+            .footer .row ul li{
+            display:inline-block;
+            margin:0px 30px;
+            }
+            
+            .footer .row a i{
+            font-size:2em;
+            margin:0% 1%;
+            }
+            
+            @media (max-width:720px){
+            .footer{
+            text-align:left;
+            padding:5%;
+            }
+            .footer .row ul li{
+            display:block;
+            margin:10px 0px;
+            text-align:left;
+            }
+            .footer .row a i{
+            margin:0% 3%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Contact</a></li>
+                <li style="margin-left:250px; font-size:40px">COFFEE BEAN'S WORLD</li>
+            </ul>
+            <p></p>
+        </nav>
+       
+    </header>
+     
+    <div class="container">
+        <div class="box-container">
+            <div class="box"><img src="./image/arabica.jpg" alt=""></div>
+            <div class="box"><img src="./image/robusta.jpg" alt=""></div>
+            <div class="box"><img src="./image/liberica.jpg" alt=""></div>
+            <div class="box"><img src="./image/excelsa.jpg" alt=""></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+        </div>
+        </div>
+        </footer>
+</body>
+</html>
