@@ -103,18 +103,21 @@ img {
   border: none;
   cursor: pointer;
 }
-
 #language-selector {
-  margin-left: 10px;
+  position: absolute;
+  top: 0px;
+  right: 250px;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex; /* İçeriği yatay olarak hizala */
+  align-items: center; /* İçerikleri dikey olarak hizala */
 }
 
 #language-selector select {
   padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: white;
-  cursor: pointer;
+  background: white;
 }
+
 #goTopButton {
   display:block; /* Başlangıçta butonu gizleyin */
   position: fixed;
