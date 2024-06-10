@@ -17,21 +17,29 @@
     <div class="container">
 
         <div class ="giris">
-            <header> 
-                <nav>
-                    <ul>
-                        <li><a href="#">Main</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Shopping</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+          <header> 
+            <nav>
+                <ul>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
             <button onclick="goToTop()" id="goTopButton" title="Sayfanın Başına Git">&#8593;</button>
         <img src="image/coffee2.jpg" alt="Image explanation" >
         <div class="overlay">
-
-            <span>- COFFEE -</span>
+          <div class="welcome-message">
+            <h2>Discover the World of Coffee</h2>
+            <p>Join us for an extraordinary coffee experience.</p>
+        </div>
+        
+        <div class="call-to-action">
+            <button onclick="window.location.href='#about'">Learn More</button>
+            <button onclick="window.location.href='#shop'">Shop Now</button>
+        </div>
             <div class="clock">
                 <div class="hours">
                   <div class="first">
@@ -76,8 +84,8 @@
                 
             </form>
             <div id="language-selector">
-              <i class="fas fa-language"></i>
-              <select onchange="setLanguage(this.value)">
+              <i style="color: gray" class="fas fa-language"></i>
+              <select style="color:gray" onchange="setLanguage(this.value)">
                   <option value="en">English</option>
                   <option value="tr">Türkçe</option>
               </select>

@@ -71,6 +71,44 @@ img {
     object-fit: cover;
 }
 
+    nav ul li a:hover {
+        color: #ff9900;
+        transition: color 0.3s ease;
+    }
+
+    .block:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .welcome-message {
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Play', sans-serif;
+  }
+
+  .call-to-action {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .call-to-action button {
+    background-color: red;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      margin:  10px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+  }
+
+  .call-to-action button:hover {
+    background-color: rgb(10, 5, 5);
+     
+  }
 .overlay {
     position: absolute;
     top: 0;
@@ -114,9 +152,13 @@ img {
 }
 
 #language-selector select {
-  padding: 5px;
-  background: white;
+  color: whitesmoke;
+  padding: 8px;
+  background-color: rgb(10, 5, 5); /* Arka plan rengi */
+  border-radius: 5px; /* Köşe yuvarlama */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
 }
+
 
 #goTopButton {
   display:block; /* Başlangıçta butonu gizleyin */
@@ -152,6 +194,7 @@ img {
     text-align: center;
     margin-bottom: 0px;
     color:#fff;
+  
 }
 .block{
     width: calc(33.33% - 20px); /* Panellerin genişliği, kenar boşluklarını da hesaba katarak eşit olacak şekilde ayarlanır */
@@ -161,7 +204,7 @@ img {
     margin: 10px; /* Panel etrafında bir boşluk bırakır */
     flex-grow: 1; /* Panellerin eşit genişlikte olmasını sağlar */
     max-width: calc(33.33% - 20px);
-    
+    cursor:pointer;
     max-height: 400px;
     margin-top: 20px;
     transition: transform 0.5s ease;
