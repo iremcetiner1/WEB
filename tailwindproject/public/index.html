@@ -19,7 +19,7 @@
       <a href="#" class ="text-6xl font-bold text-gega-grey text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-white">ZiPOTFY</a>
       <!-- Mobile Menu-->
       <div class="block md:hidden">
-        <div class="space-y-1 cursor-pointer">
+        <div class="py-1  cursor-pointer">
           <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
           <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
           <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
@@ -28,7 +28,7 @@
       <!--NAVIGATION-->
       <nav class="flex justify between flex-1">
         <!--MENU-->
-        <div class = "flex items-center text-lg space-x-8">
+        <div class = "hidden md:flex items-center text-lg space-x-8">
           <a href="#" class="hover:text-gega-red text-white transition duration-500">MUSICS</a>
           <a href="#" class="hover:text-gega-red text-white transition duration-500">PODCASTS</a>
           <a href="#" class="hover:text-gega-red text-white transition duration-500">MUSIC GENRES</a>
@@ -39,13 +39,13 @@
         <div class="flex items-center space-x-4 lg:space-x-8">
           <!--Search area-->
           <form>
-            <div class="group border-r px-4 mx-4 py-1 border-gega-red">
-              <input type ="text" class=" opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-44 transition duration-500">
-              <button class="-ml-4 group-hover:ml-0 transition duration-500"></button><i class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
+            <div class="group border-r lg:px-4 lg:mx-4 py-1 border-gega-red md:px-1 md:mx-">
+              <input type ="text" class=" opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none lg:w-44 md:w-8 transition duration-500">
+              <button class="lg:-ml-4 md:-ml-1 group-hover:ml-0 transition duration-500"></button><i class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
             </div>
           </form>
           <!--Sıgn Up-->
-          <div class="flex flex-nowrap items-center space-x-8 text-lg">
+          <div class="flex flex-nowrap items-center space-x-8 text-lg md:flex-wrap">
             <a href="#">LogIn</a>
             <a href="#" class="flex-shrink-0 bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-500">Sign Up</a>
           </div>
@@ -282,15 +282,15 @@
   </section>
   <!--NeW Section-->
   <section class="bg-gega-white">
-    <div class="container flex items-center justify-center relative">
+    <div class=" pl-10 lg:pl-0 container flex items-center justify-center relative">
       <!--Left content-->
-      <div class="basis-1/2">
+      <div class="hidden md:block md:basis-1/3 lg:basis-1/2">
         <img src="./images/foto.jpg" alt="" class="absolute bottom-0">
       </div>
       <!--Right Content-->
-      <div class="basis-1/2">
+      <div class="md:basis-1/3 lg:basis-1/2">
         <div class="flex flex-col justify-center py-10">
-          <h3 class="tracking-wider text-gega-melon"> ROCK, INDIE, SLOW</h3>
+          <h3 class="tracking-wider text-gega-melon md:mt-3"> ROCK, INDIE, SLOW</h3>
           <h2 class="mb-2"> ReDD</h2>
           <p class="text-sm mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore, officiis labore est laudantium itaque architecto exercitationem eligendi? Dicta officia sapiente repellat ducimus doloribus eaque alias iste, voluptate enim deleniti?</p>
           <h3 class="tracking-wider text-gega-red"> PRIZES</h3>
@@ -302,6 +302,21 @@
       </div>
     </div>
 
+  </section>
+  <!--POST SECTION-->
+  <section class="py-24 bg-black text-gega-grey">
+    <!---->
+    <div class="container">
+      <h2 class="text-gega-red"><a href="">Populer Posts</a></h2>
+      <div class="grid grid-cols-6 gap-10">
+        <!--ITEM 1-->
+        <div class="col-span-3 border border-gega-red">
+          <div class="border-b border-gega-red p-4 flex item-center justify-between">
+
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>
